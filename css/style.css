@@ -1,0 +1,48 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #89bda5;
+}
+
+#game-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner{
+    color: lightgreen;
+}
+
+#cells-container{
+    user-select: none;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.cell{
+    border: 2px solid darkcyan;
+    height: 100px;
+    width: 100px;
+    font-size: 70px;
+    text-align: center;
+}
+
+#turn-info{
+    font-size: 40px;
+    font-weight: bold;
+    color: #206a20;
+}
+
+#restart-button{
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: rgb(8, 7, 7);
+}
+
